@@ -11,15 +11,23 @@ class SlideshowPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    bool isLarge = MediaQuery.of(context).size.height > 500;
+
+    final children = [
+      const Expanded(child: MiSlideshow()),
+      const Expanded(child: MiSlideshow())
+    ];
+
+    return Scaffold(
         // backgroundColor: Colors.purple,
         // body: MiSlideshow(),
-        body: Column(
-      children: <Widget>[
-        Expanded(child: MiSlideshow()),
-        Expanded(child: MiSlideshow())
-      ],
-    ));
+        body: isLarge
+            ? Column(
+                children: children,
+              )
+            : Row(
+                children: children,
+              ));
   }
 }
 

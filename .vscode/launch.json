@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "themes_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "themes_app (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "themes_app (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter-All",
+            "preLaunchTask": "Flutter-Launch-All",
+            "type": "dart",
+            "request": "launch",
+        },
+        {
+            "name": "Flutter-Mobile",
+            "preLaunchTask": "Flutter-Launch-Mobile",
+            "type": "dart",
+            "request": "launch",
+        },
+        {
+            "name": "Flutter-Tablet",
+            "preLaunchTask": "Flutter-Launch-Tablet",
+            "type": "dart",
+            "request": "launch",
+        },
+        {
+            "name": "Flutter-Phone",
+            "preLaunchTask": "Flutter-Launch-Phone",
+            "type": "dart",
+            "request": "launch",
+        },
+        {
+            "name": "Flutter-Web",
+            "preLaunchTask": "Flutter-Launch-Web",
+            "type": "dart",
+            "request": "launch",
+        }
+    ]
+}
